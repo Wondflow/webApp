@@ -1,0 +1,64 @@
+{
+	"index.html": {
+		"refer": [
+			"login.html",
+			"main-page.html"
+		],
+		"resources": []
+	},
+	"guide.html": {
+		"refer": [
+			"index.html"
+		],
+		"resources": []
+	},
+	"login.html": {
+		"refer": [
+			"index.html"
+		]
+	},
+	"main-page.html": {
+		"resources": [
+			"vedio/miss.mp4"
+		],
+		"refer": [
+			"photo.html",
+			"video.html",
+			"music.html",
+			"new-thing.html",
+			"my-place.html",
+			"sz.html"
+		]
+	},
+	"video.html": {
+		"refer": [
+			"main-page.html",
+			"music.html",
+			"sz.html"
+		]
+	},
+	"photo.html": {
+		"refer": [
+			"main-page.html"
+		]
+	},
+	"music.html": {
+		"refer": [
+			"video.html",
+			"photo.html",
+			"main-page.html",
+			"sz.html"
+		]
+	},
+	"new-thing.html": {
+		"refer": [
+			"main-page.html"
+		]
+	},
+	"sz.html": {
+		"refer": [
+			"main-page.html",
+			"index.html"
+		]
+	}
+}

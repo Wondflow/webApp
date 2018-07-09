@@ -1,0 +1,507 @@
+{
+	"@platforms": [
+		"android",
+		"iPhone",
+		"iPad"
+	],
+	"id": "H5F44F298",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "webApp",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "4.0",/*应用版本名称*/
+		"code": ""
+	},
+	"description": "",/*应用描述信息*/
+	"icons": {
+		"72": "icon.png"
+	},
+	"launch_path": "guide.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "",/*开发者名称*/
+		"email": "",/*开发者邮箱地址*/
+		"url": ""
+	},
+	"permissions": {
+		"Messaging": {
+			"description": "短彩邮件插件"
+		},
+		"Cache": {
+			"description": "管理应用缓存"
+		},
+		"Console": {
+			"description": "跟踪调试输出日志"
+		},
+		"Contacts": {
+			"description": "访问系统联系人信息"
+		},
+		"Events": {
+			"description": "应用扩展事件"
+		},
+		"Maps": {
+			"description": "管理地图插件"
+		},
+		"Speech": {
+			"description": "管理语音识别插件"
+		}
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": true
+		},
+		"popGesture": "close",/*设置应用默认侧滑返回关闭Webview窗口，"none"为无侧滑返回功能，"hide"为侧滑隐藏Webview窗口。参考http://ask.dcloud.net.cn/article/102*/
+		"runmode": "normal",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密���库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+				"permissions": [
+					"<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+					"<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+					"<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+					"<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+					"<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.CAMERA\"/>",
+					"<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+					"<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+					"<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+					"<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+					"<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+					"<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+					"<uses-feature android:name=\"android.hardware.camera\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+				]
+			},
+			"orientation": [
+				"portrait-primary"
+			],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					/*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "", /*iPhone3/3GS程序图标，分辨率：57x57*/
+						"retina": "", /*iPhone4程序图标，分辨率：114x114*/
+						/*iPhone4S/5/6程序图标，分辨率：120x120*/
+						/*iPhone6 Plus程序图标，分辨率：180x180*/
+						"spotlight-normal": "", /*iPhone3/3GS Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "", /*iPhone4 Spotlight搜索程序图标，分辨率：58x58*/
+						/*iPhone4S/5/6 Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "", /*iPhone4设置页面程序图标，分辨率：29x29*/
+						/*iPhone4S/5/6设置页面程序图标，分辨率：58x58*/
+						"app@2x": "unpackage/res/icons/120x120.png",
+						"app@3x": "unpackage/res/icons/180x180.png",
+						"settings@3x": "unpackage/res/icons/87x87.png",
+						"settings@2x": "unpackage/res/icons/58x58.png",
+						"spotlight@2x": "unpackage/res/icons/80x80.png",
+						"spotlight@3x": "unpackage/res/icons/120x120.png",
+						"notification@3x": "unpackage/res/icons/60x60.png",
+						"notification@2x": "unpackage/res/icons/40x40.png"
+					},
+					"ipad": {
+						"normal": "", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "", /*iPad高分屏程序图标，分辨率：144x144*/
+						/*iPad iOS7程序图标，分辨率：76x76*/
+						/*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						/*iPad设置页面程序图标，分辨率：29x29*/
+						"app": "unpackage/res/icons/76x76.png",
+						"app@2x": "unpackage/res/icons/152x152.png",
+						"settings": "unpackage/res/icons/29x29.png",
+						"proapp@2x": "unpackage/res/icons/167x167.png",
+						"spotlight": "unpackage/res/icons/40x40.png",
+						"settings@2x": "unpackage/res/icons/58x58.png",
+						"spotlight@2x": "unpackage/res/icons/80x80.png",
+						"notification": "unpackage/res/icons/20x20.png",
+						"notification@2x": "unpackage/res/icons/40x40.png"
+					},
+					"appstore": "C:/Users/Administrator/Desktop/t010389ab44c1ad84cc.png"
+				},
+				"android": {
+					"mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "unpackage/res/icons/144x144.png",
+					"xxxhdpi": "unpackage/res/icons/192x192.png"
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": "", /*iPhone3启动图片选，分辨率：320x480*/
+						"retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						"retina40": "",/*4.0 英寸设备(iPhone5/iPhone5s)启动图片，分辨率：640x1136*/
+						"retina47": "",/*4.7 英寸设备(iPhone6)启动图片，分辨率：750x1334*/
+						"retina55": "",/*5.5 英寸设备(iPhone6 Plus)启动图片，分辨率：1242x2208*/
+						"retina55l": ""
+					},
+					"ipad": {
+						"portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						"landscape": "", /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						"portrait7": "", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+						"portrait-retina7": "",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						"landscape7": "", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": ""
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
+					"hdpi": "", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": ""
+				}
+			}
+		},
+		"ads": {
+			"rp": false,
+			"splash": false,
+			"push": false
+		},
+		"adid": ""
+	},
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [],
+				"refer": [
+					"login.html",
+					"main-page.html"
+				],
+				"priority": 0
+			},
+			"guide.html": {
+				"resources": [],
+				"refer": [
+					"index.html"
+				],
+				"priority": 0
+			},
+			"login.html": {
+				"resources": [],
+				"refer": [
+					"index.html"
+				],
+				"priority": 0
+			},
+			"main-page.html": {
+				"resources": [
+					"vedio/miss.mp4"
+				],
+				"refer": [
+					"photo.html",
+					"video.html",
+					"music.html",
+					"new-thing.html",
+					"my-place.html",
+					"sz.html"
+				],
+				"priority": 0
+			},
+			"video.html": {
+				"resources": [],
+				"refer": [
+					"main-page.html",
+					"music.html",
+					"sz.html"
+				],
+				"priority": 0
+			},
+			"photo.html": {
+				"resources": [],
+				"refer": [
+					"main-page.html"
+				],
+				"priority": 0
+			},
+			"music.html": {
+				"resources": [],
+				"refer": [
+					"video.html",
+					"photo.html",
+					"main-page.html",
+					"sz.html"
+				],
+				"priority": 0
+			},
+			"new-thing.html": {
+				"resources": [],
+				"refer": [
+					"main-page.html"
+				],
+				"priority": 0
+			},
+			"sz.html": {
+				"resources": [],
+				"refer": [
+					"main-page.html",
+					"index.html"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"font-awesome-4.7.0/less/larger.less",
+				"swiper-4.2.0/src/components/core/update/updateAutoHeight.js",
+				"font-awesome-4.7.0/fonts/fontawesome-webfont.woff",
+				"swiper-4.2.0/src/components/effect-coverflow/effect-coverflow.js",
+				"font-awesome-4.7.0/scss/_list.scss",
+				"swiper-4.2.0/src/modules/device/device.js",
+				"swiper-4.2.0/demos/330-hash-navigation.html",
+				"swiper-4.2.0/src/less/mixins.less",
+				"swiper-4.2.0/src/components/core/manipulation/removeSlide.js",
+				"swiper-4.2.0/src/components/effect-cube/effect-cube.less",
+				"swiper-4.2.0/src/components/parallax/parallax.js",
+				"font-awesome-4.7.0/scss/_core.scss",
+				"swiper-4.2.0/scripts/gulpfile.js",
+				"swiper-4.2.0/src/components/core/events/onTouchMove.js",
+				"img/c25fc0f1ly1fkfcuorgr6j21900u0b29.jpg",
+				"font-awesome-4.7.0/fonts/fontawesome-webfont.svg",
+				"swiper-4.2.0/src/components/autoplay/autoplay.js",
+				"img/0066II0Ogy1fkxkglv80zj30k00b9aag.jpg",
+				"font-awesome-4.7.0/less/icons.less",
+				"swiper-4.2.0/demos/230-effect-cube.html",
+				"swiper-4.2.0/src/components/core/images/loadImage.js",
+				"font-awesome-4.7.0/scss/_rotated-flipped.scss",
+				"img/fjhjhhkj.JPG",
+				"swiper-4.2.0/dist/js/swiper.min.js",
+				"font-awesome-4.7.0/HELP-US-OUT.txt",
+				"swiper-4.2.0/src/components/core/update/updateSize.js",
+				"swiper-4.2.0/demos/380-responsive-breakpoints.html",
+				"swiper-4.2.0/src/components/core/slide/slideNext.js",
+				"swiper-4.2.0/demos/370-lazy-load-images.html",
+				"swiper-4.2.0/scripts/build-less.js",
+				"swiper-4.2.0/package-lock.json",
+				"img/006xv6gGly1fkwomy8fqej30qo1bfjwr.jpg",
+				"font-awesome-4.7.0/scss/_mixins.scss",
+				"swiper-4.2.0/src/components/pagination/pagination.less",
+				"swiper-4.2.0/src/components/core/update/updateProgress.js",
+				"font-awesome-4.7.0/less/screen-reader.less",
+				"swiper-4.2.0/package.js",
+				"swiper-4.2.0/src/components/core/transition/index.js",
+				"css/photo.css",
+				"swiper-4.2.0/src/components/core/grab-cursor/index.js",
+				"swiper-4.2.0/src/components/core/update/updateActiveIndex.js",
+				"swiper-4.2.0/demos/400-zoom.html",
+				"font-awesome-4.7.0/scss/_screen-reader.scss",
+				"register.html",
+				"swiper-4.2.0/src/components/core/grab-cursor/unsetGrabCursor.js",
+				"swiper-4.2.0/demos/310-thumbs-gallery-loop.html",
+				"img/10x1009a0a0.png",
+				"swiper-4.2.0/README.md",
+				"css/login.css",
+				"swiper-4.2.0/component.json",
+				"swiper-4.2.0/src/components/effect-flip/effect-flip.js",
+				"swiper-4.2.0/scripts/build-js.js",
+				"font-awesome-4.7.0/less/bordered-pulled.less",
+				"swiper-4.2.0/src/components/navigation/navigation.less",
+				"font-awesome-4.7.0/fonts/fontawesome-webfont.woff2",
+				"swiper-4.2.0/demos/280-autoplay.html",
+				"swiper-4.2.0/src/utils/class.js",
+				"swiper-4.2.0/dist/js/swiper.min.js.map",
+				"font-awesome-4.7.0/fonts/FontAwesome.otf",
+				"swiper-4.2.0/demos/340-history.html",
+				"font-awesome-4.7.0/less/stacked.less",
+				"font-awesome-4.7.0/less/mixins.less",
+				"img/c25fc0f1ly1fkfcupw79wj20wi190e82.jpg",
+				"swiper-4.2.0/dist/js/swiper.esm.js",
+				"swiper-4.2.0/src/components/lazy/lazy.js",
+				"swiper-4.2.0/src/components/core/update/updateClickedSlide.js",
+				"img/0069WUjPgy1fky0leaqiij30qo0qoacf.jpg",
+				"swiper-4.2.0/src/utils/device.js",
+				"swiper-4.2.0/src/components/core/images/preloadImages.js",
+				"img/40ab4f4cly1fqeium35vlj218526ib29.jpg",
+				"css/register.css",
+				"swiper-4.2.0/src/components/effect-flip/effect-flip.less",
+				"img/006sNUW3gy1fkyx32arq9j30qo1bsgtj.jpg",
+				"font-awesome-4.7.0/scss/_path.scss",
+				"swiper-4.2.0/src/components/core/classes/removeClasses.js",
+				"img/40ab4f4cgy1fqed6uzipyj20gv0u0gs15.jpg",
+				"img/006f0DVEgy1fkxws5e82wj32ep45ax6w.jpg",
+				"swiper-4.2.0/demos/270-mousewheel-control.html",
+				"swiper-4.2.0/demos/290-dynamic-slides.html",
+				"swiper-4.2.0/src/components/zoom/zoom.less",
+				"swiper-4.2.0/src/utils/utils.js",
+				"swiper-4.2.0/demos/080-scrollbar.html",
+				"swiper-4.2.0/src/components/lazy/lazy.less",
+				"swiper-4.2.0/demos/100-space-between.html",
+				"swiper-4.2.0/demos/170-slides-per-column.html",
+				"font-awesome-4.7.0/scss/_bordered-pulled.scss",
+				"swiper-4.2.0/scripts/build-config.js",
+				"swiper-4.2.0/src/components/core/slide/index.js",
+				"swiper-4.2.0/src/components/core/manipulation/prependSlide.js",
+				"swiper-4.2.0/demos/240-effect-coverflow.html",
+				"swiper-4.2.0/src/components/zoom/zoom.js",
+				"swiper-4.2.0/src/modules/browser/browser.js",
+				"swiper-4.2.0/src/components/core/events/onTouchStart.js",
+				"swiper-4.2.0/src/components/core/update/updateSlidesProgress.js",
+				"swiper-4.2.0/src/utils/browser.js",
+				"font-awesome-4.7.0/less/core.less",
+				"swiper-4.2.0/src/components/core/loop/loopCreate.js",
+				"swiper-4.2.0/src/components/controller/controller.less",
+				"swiper-4.2.0/src/components/core/slide/slidePrev.js",
+				"swiper-4.2.0/src/components/navigation/navigation.js",
+				"swiper-4.2.0/gulpfile.js",
+				"swiper-4.2.0/src/components/core/transition/transitionStart.js",
+				"swiper-4.2.0/src/components/effect-coverflow/effect-coverflow.less",
+				"font-awesome-4.7.0/less/list.less",
+				"swiper-4.2.0/demos/070-pagination-custom.html",
+				"js/jquery.min.js",
+				"swiper-4.2.0/CONTRIBUTING.md",
+				"swiper-4.2.0/src/modules/resize/resize.less",
+				"js/login.js",
+				"swiper-4.2.0/src/components/core/slide/slideToClickedSlide.js",
+				"swiper-4.2.0/src/components/core/update/updateSlidesClasses.js",
+				"font-awesome-4.7.0/fonts/fontawesome-webfont.ttf",
+				"swiper-4.2.0/src/components/core/loop/loopDestroy.js",
+				"swiper-4.2.0/demos/360-parallax.html",
+				"swiper-4.2.0/demos/210-infinite-loop-with-slides-per-group.html",
+				"swiper-4.2.0/src/components/core/core.less",
+				"swiper-4.2.0/demos/250-effect-flip.html",
+				"font-awesome-4.7.0/scss/_icons.scss",
+				"font-awesome-4.7.0/scss/_variables.scss",
+				"swiper-4.2.0/src/components/core/translate/getTranslate.js",
+				"font-awesome-4.7.0/scss/_stacked.scss",
+				"swiper-4.2.0/src/components/core/grab-cursor/setGrabCursor.js",
+				"swiper-4.2.0/src/swiper.less",
+				"swiper-4.2.0/demos/390-autoheight.html",
+				"font-awesome-4.7.0/css/font-awesome.min.css",
+				"swiper-4.2.0/src/components/a11y/a11y.less",
+				"swiper-4.2.0/demos/050-pagination-progress.html",
+				"swiper-4.2.0/src/components/core/breakpoints/setBreakpoint.js",
+				"swiper-4.2.0/demos/160-scroll-container.html",
+				"vedio/luck.mp3",
+				"swiper-4.2.0/src/components/core/events/onResize.js",
+				"js/scroll.js",
+				"swiper-4.2.0/src/components/core/update/index.js",
+				"swiper-4.2.0/src/components/core/update/updateSlidesOffset.js",
+				"swiper-4.2.0/dist/css/swiper.min.css",
+				"swiper-4.2.0/demos/200-infinite-loop.html",
+				"swiper-4.2.0/demos/150-freemode.html",
+				"img/006NW4JRgy1fkyfjdznwqj30qo140dm6.jpg",
+				"swiper-4.2.0/src/components/core/update/updateSlides.js",
+				"swiper-4.2.0/scripts/banner.js",
+				"css/my-place.css",
+				"swiper-4.2.0/src/components/core/slide/slideReset.js",
+				"swiper-4.2.0/src/components/scrollbar/scrollbar.less",
+				"swiper-4.2.0/demos/220-effect-fade.html",
+				"swiper-4.2.0/demos/180-nested.html",
+				"swiper-4.2.0/src/components/a11y/a11y.js",
+				"swiper-4.2.0/bower.json",
+				"font-awesome-4.7.0/less/path.less",
+				"swiper-4.2.0/src/components/history/history.js",
+				"img/0066M00Cgy1fkx9vrxc0jj30qo0q1gop.jpg",
+				"swiper-4.2.0/src/components/core/manipulation/index.js",
+				"swiper-4.2.0/CHANGELOG.md",
+				"swiper-4.2.0/src/components/core/transition/transitionEnd.js",
+				"swiper-4.2.0/src/components/core/images/index.js",
+				"swiper-4.2.0/src/components/core/translate/minTranslate.js",
+				"swiper-4.2.0/src/components/controller/controller.js",
+				"font-awesome-4.7.0/fonts/fontawesome-webfont.eot",
+				"swiper-4.2.0/src/modules/resize/resize.js",
+				"swiper-4.2.0/src/components/core/translate/setTranslate.js",
+				"swiper-4.2.0/src/components/core/translate/index.js",
+				"swiper-4.2.0/src/utils/support.js",
+				"swiper-4.2.0/dist/css/swiper.css",
+				"swiper-4.2.0/src/components/core/slide/slideToClosest.js",
+				"swiper-4.2.0/src/components/hash-navigation/hash-navigation.js",
+				"swiper-4.2.0/demos/350-rtl.html",
+				"swiper-4.2.0/src/components/core/defaults.js",
+				"font-awesome-4.7.0/less/fixed-width.less",
+				"font-awesome-4.7.0/scss/_fixed-width.scss",
+				"swiper-4.2.0/src/components/keyboard/keyboard.js",
+				"swiper-4.2.0/src/components/core/manipulation/removeAllSlides.js",
+				"swiper-4.2.0/demos/090-vertical.html",
+				"font-awesome-4.7.0/scss/font-awesome.scss",
+				"swiper-4.2.0/dist/js/swiper.js",
+				"swiper-4.2.0/src/components/core/manipulation/appendSlide.js",
+				"swiper-4.2.0/demos/190-grab-cursor.html",
+				"swiper-4.2.0/demos/020-navigation.html",
+				"swiper-4.2.0/src/components/core/breakpoints/getBreakpoint.js",
+				"swiper-4.2.0/demos/260-keyboard-control.html",
+				"font-awesome-4.7.0/less/font-awesome.less",
+				"font-awesome-4.7.0/less/animated.less",
+				"swiper-4.2.0/src/modules/support/support.js",
+				"swiper-4.2.0/src/components/virtual/virtual.js",
+				"swiper-4.2.0/src/components/effect-fade/effect-fade.js",
+				"font-awesome-4.7.0/scss/_larger.scss",
+				"swiper-4.2.0/src/components/core/breakpoints/index.js",
+				"swiper-4.2.0/src/components/core/core-class.js",
+				"swiper-4.2.0/demos/320-multiple-swipers.html",
+				"swiper-4.2.0/package.json",
+				"swiper-4.2.0/src/components/scrollbar/scrollbar.js",
+				"swiper-4.2.0/demos/420-custom-plugin.html",
+				"swiper-4.2.0/demos/060-pagination-fraction.html",
+				"swiper-4.2.0/src/components/effect-cube/effect-cube.js",
+				"swiper-4.2.0/src/components/core/events/index.js",
+				"swiper-4.2.0/src/components/core/classes/index.js",
+				"swiper-4.2.0/demos/110-slides-per-view.html",
+				"swiper-4.2.0/src/components/core/check-overflow/index.js",
+				"swiper-4.2.0/playground/index.html",
+				"swiper-4.2.0/src/components/mousewheel/mousewheel.js",
+				"swiper-4.2.0/src/components/core/events/onTouchEnd.js",
+				"img/t01675d90ea8e5ce77e.png",
+				"img/006kmPqrly1fkyq6le0xoj30k00k0diq.jpg",
+				"swiper-4.2.0/demos/010-default.html",
+				"swiper-4.2.0/src/components/core/slide/slideToLoop.js",
+				"swiper-4.2.0/demos/120-slides-per-view-auto.html",
+				"swiper-4.2.0/src/utils/dom.js",
+				"font-awesome-4.7.0/less/variables.less",
+				"swiper-4.2.0/src/swiper.js",
+				"swiper-4.2.0/src/components/core/transition/setTransition.js",
+				"find-pwd.html",
+				"swiper-4.2.0/src/components/core/slide/slideTo.js",
+				"swiper-4.2.0/demos/030-pagination.html",
+				"font-awesome-4.7.0/css/font-awesome.css",
+				"swiper-4.2.0/demos/410-virtual-slides.html",
+				"swiper-4.2.0/src/components/core/loop/index.js",
+				"font-awesome-4.7.0/scss/_animated.scss",
+				"css/index.css",
+				"swiper-4.2.0/src/components/core/events/onClick.js",
+				"swiper-4.2.0/src/modules/observer/observer.js",
+				"swiper-4.2.0/demos/130-centered.html",
+				"swiper-4.2.0/src/components/core/classes/addClasses.js",
+				"img/40ab4f4cgy1fqed6uzipyj20gv0u0gs5.jpg",
+				"css/music.css",
+				"swiper-4.2.0/src/components/core/translate/maxTranslate.js",
+				"css/main-page.css",
+				"img/40ab4f4cly1fqek6kk24sj20vh1jyqtn.jpg",
+				"swiper-4.2.0/src/components/core/loop/loopFix.js",
+				"swiper-4.2.0/demos/140-centered-auto.html",
+				"swiper-4.2.0/src/components/pagination/pagination.js",
+				"swiper-4.2.0/dist/js/swiper.esm.bundle.js",
+				"font-awesome-4.7.0/less/rotated-flipped.less",
+				"swiper-4.2.0/demos/300-thumbs-gallery.html",
+				"swiper-4.2.0/demos/040-pagination-dynamic.html",
+				"swiper-4.2.0/LICENSE",
+				"swiper-4.2.0/demos/430-slideable-menu.html",
+				"swiper-4.2.0/src/components/effect-fade/effect-fade.less"
+			]
+		}
+	}
+}

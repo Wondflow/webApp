@@ -1,0 +1,127 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	width: 100%;
+	height: auto;
+	background-color: #FFFFFF;
+	
+}
+ul,li
+{
+	list-style: none;
+}
+a
+{
+	text-decoration: none;
+	color:#FFFFFF;
+	/*background: #9DA0C1;
+	display:inline-block;*/
+}
+/*头部区域*/
+.bg-box
+{
+	width: 100%;
+	height: auto;
+}
+.bg-box img
+{
+	width: 100%;
+	height: 100%;
+}
+.bg-box p
+{
+	position: absolute;
+	top:20px;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+.bg-box p a
+{
+	display: inline-block;
+	height: 30px;
+	width: 20px;
+	margin-left: 20px;
+	font-weight: normal;
+}
+h3
+{
+	margin-top: 5px;
+	text-align: center;
+}
+/*注册/找回密码页面的样式*/
+.register
+{
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+}
+.register p
+{
+	width: 95%;
+	height: 60px;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	margin: 10px 0 10px 5px;
+	padding-left: 10px;
+}
+.register p i
+{
+	display: inline-block;
+	width: 27%;
+}
+.register p input[type="text"]
+{
+	height: 40px;
+	width: 47%;
+	margin:10px 0;
+	border: 0;
+	outline: none;
+	font-size: 16px;
+}
+.register p a.get
+{
+	display: inline-block;
+	width:87px;
+	height:60px;
+	border-radius:15px;
+	line-height: 60px;
+	background-color: #CCCCCC;
+}
+.register .greet
+{
+	line-height:60px;
+	text-align:center;
+	font-size: 14px;
+}
+.register .greet input[type="checkbox"]
+{
+	display: inline-block;
+	width: 20px;
+	height:20px;
+	vertical-align: middle;
+}
+
+.register a.register-btn
+{
+	width: 60%;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	background:#DD5563;
+	text-align: center;
+	border-radius: 15px;
+	color: #FFFFFF;
+	margin: 10px auto;
+}
+.register p:nth-child(4),.register p:nth-child(5)
+{
+	border: 0;
+}
+.register p:nth-child(5)
+{
+	height: 30px;
+	line-height: 30px;
+}

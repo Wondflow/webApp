@@ -1,0 +1,237 @@
+/*公共样式*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	width: 100%;
+	height: auto;
+	background-color: #9da0c1;
+	
+}
+ul,li
+{
+	list-style: none;
+}
+html{
+	font-size: 16px;
+}
+/*头部样式设置*/
+.header,.footer
+{
+	width: 100%;
+	height: 50px;
+	background-color: #ff9a48;
+	position: fixed;
+	z-index: 1;
+}
+
+.fa-bars
+{
+  color: #FFFFFF;
+}
+.header .fa-bars:hover
+{
+	color: #9DA0C1;
+}
+.header .bar
+{
+	width: 15%;
+	line-height: 50px;
+	text-align: center;
+	font-size: 30px;
+	margin-left: 2rem;
+}
+.header .r-bar
+{
+	display: none;
+}
+.header .tit
+{
+	display: inline-block;
+	width: 50%;
+	text-align:center;
+	font-size: 24px;
+	color: #FFFFFF;
+	font-weight: normal;
+}
+
+/*主内容设置*/
+.main-content
+{
+	width: 100%;
+	height: auto;
+	overflow:scroll;
+	position: absolute;
+	top: 50px;
+	bottom: 50px;
+}
+/*photo musice vedio共同样式*/
+.main-content .photo,.main-content .musice,.main-content .vedio
+{
+	width: 99%;
+	height: 200px;
+	text-align: center;
+	margin:2px auto;
+	/*border: 1px solid #F7C0D5;*/
+}
+.main-content .photo
+{
+	width: 99%;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+}
+.main-content .photo ul
+{
+	width: 100%;
+	height: 200px;
+	position: absolute;
+}
+.main-content .photo ul li
+{
+	width: 100%;
+	height: 200px;
+}
+.main-content .photo img
+{
+	width: 100%;
+	height: 100%;
+}
+.main-content .musice
+{
+	background:url(../img/fjhjhhkj.JPG) no-repeat center top;
+}
+.main-content .musice audio
+{
+	margin-top: 150px;
+	width: 100%;
+	opacity: 0.3;
+}
+.main-content .vedio video
+{
+	width:100%;
+	height: 200px;
+	opacity: 0.3;
+	position: relative;
+
+}
+/*.main-content .vedio 
+{
+	background:url(../img/fjhjhhkj.JPG) no-repeat center top;
+}*/
+.main-content .vedio span
+{
+	position: absolute;
+}
+.main-content .vedio span img
+{
+	width: 357px;
+	height:200px;
+	opacity: 0.5;
+}
+/*尾部样式*/
+.footer
+{
+	bottom: 0;
+}
+.footer .fa
+{
+	color: #FFFFFF;
+}
+.footer .fa:hover
+{
+	color: #9DA0C1;
+}
+.footer i,.footer a
+{
+	display: inline-block;
+	width: 23%;
+	line-height: 50px;
+	text-align: center;
+	font-size: 30px;
+}
+
+
+/*滑出页样式*/
+.silder
+{
+	height: 667px;
+	width: 375px;
+	position:absolute;
+	left:-375px;
+	/*border: 2px solid #f00;*/
+	z-index: 5;
+	background-color: #373952;
+	color: #FFFFFF;
+}
+.silder .r-bar
+{
+	height: 50px;
+	width: 50px;
+	font-size: 30px;
+	line-height: 50px;
+	text-align: center;
+	display: block;
+}
+.silder .cog,.silder .pic,.silder .msg
+{
+	height: 100px;
+	width: 100px;
+	text-align: center;
+	font-size: 30px;
+	display: inline-block;
+}
+.silder .pic
+{
+	border:1px solid #9f6649;
+	border-radius: 50px;
+	margin: 0 20px;
+}
+.silder .pic .fa-photo,.silder .msg .fa-envelope,.silder .cog .fa-cog
+{
+	line-height: 100px;
+	font-size: 30px;
+    color: #FFFFFF;
+}
+.silder .list
+{
+	margin-top: 50px;
+}
+.silder .list a
+{
+	color: #FFFFFF;
+	font-size: 22px;
+	text-decoration: none;
+}
+.silder .list ul li
+{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	border-top: 1px solid #9DA0C1;
+	line-height: 50px;
+}
+.silder .list ul li a:hover
+{
+	color: #9f6649;
+}
+silder .list ul li:nth-child(4)
+{
+	border-bottom: 1px solid red;
+}
+.silder .list ul li:nth-child(2n+1)
+{
+	background-color: #31334a;
+}
+.silder p a
+{
+	display: block;
+	text-align: center;
+	margin-top: 50px;
+	color: #FFFFFF;
+	text-decoration: none;
+	width: 100%;
+	height: 20px;
+}

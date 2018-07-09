@@ -1,0 +1,149 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	width: 100%;
+	height: auto;
+	background-color: #FFFFFF;
+	
+}
+ul,li,dl,dt,dd
+{
+	list-style: none;
+}
+a
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+html{
+	font-size: 16px;
+}
+/*头部样式设置*/
+.header
+{
+	width: 100%;
+	height: 50px;
+	background-color: #8e5cd5;
+	position: fixed;
+	z-index: 3;
+}
+.header .back
+{
+	display: inline-block;
+	width: 15%;
+	line-height: 50px;
+	font-size: 25px;
+	text-align:center;
+	margin-left: 10px;
+}
+.header h3
+{
+	font-weight: normal;
+	display: inline-block;
+	width: 50%;
+	text-align:center;
+	color: #FFFFFF;
+	font-size: 25px;
+}
+.main-music
+{
+	width: 100%;
+	height: auto;
+	overflow: scroll;
+	position: absolute;
+	top: 50px;
+	clear: both;
+	z-index: 1;
+}
+/*搜索框样式*/
+.search
+{
+	width: 100%;
+	height: 60px;
+	background-color: #e0e3ec;
+	clear: both;
+}
+.search p
+{
+	width: 90%;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 10px;
+	margin: 10px 10px;
+	border: 2px solid #CCCCCC;
+	border-radius: 10px;
+}
+.search p input[type='search']
+{
+	width: 90%;
+	height: 35px;
+	padding-left: 10px;
+	outline: none;
+	border: 0;
+	background-color: #e0e3ec;
+	font-size: 16px;
+	line-height: 35px;
+}
+/*音乐列表样式*/
+.music-box
+{
+	width: 100%;
+	margin-top: 20px;
+}
+.music-box .mus-item
+{
+	width: 100%;
+	height: 103px;
+	border-bottom: 1px solid  #ACADC2;
+	font-size: 18px;
+	line-height: 30px;
+}
+.music-box .mus-item .mus-img
+{
+	width: 100px;
+	height: 100px;
+	background-color: #373952;
+	float: left;
+	margin: 0 10px;
+	font-size: 80px;
+	line-height: 100px;
+	text-align: center;
+}
+.music-box .mus-item .mus-img .fa .fa-image
+{
+	font-size: 30px;
+}
+.music-box .mus-item .mus-img dd
+{
+	float: left;
+	
+}
+
+/*尾部样式*/
+.footer
+{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	background: #8e5cd5;
+	z-index: 2;
+}
+.footer .fa
+{
+	color: #FFFFFF;
+}
+.footer .fa:hover
+{
+	color:#DD5563;
+}
+.footer i,.footer a
+{
+	display: inline-block;
+	width: 23%;
+	line-height: 50px;
+	text-align: center;
+	font-size: 30px;
+}

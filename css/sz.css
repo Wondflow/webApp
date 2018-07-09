@@ -1,0 +1,103 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	width: 100%;
+	height: auto;
+	background-color: #FFFFFF;
+	
+}
+ul,li,dl,dt,dd
+{
+	list-style: none;
+}
+a
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+html{
+	font-size: 16px;
+}
+/*头部样式设置*/
+.header
+{
+	width: 100%;
+	height: 50px;
+	background-color: #8e5cd5;
+}
+.header .back
+{
+	display: inline-block;
+	width: 15%;
+	line-height: 50px;
+	font-size: 25px;
+	text-align:center;
+	margin-left: 10px;
+}
+.header h3
+{
+	font-weight: normal;
+	display: inline-block;
+	width: 50%;
+	text-align:center;
+	color: #FFFFFF;
+	font-size: 25px;
+}
+.main
+{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.main .item-list
+{
+	width: 100%;
+	height: 216px;
+	/*position: absolute;
+	top:300px;*/
+	
+}
+.main .item-list ul li
+{
+	height: 50px;
+	width: 100%;
+	line-height: 50px;
+	padding-left: 20px;
+	border-bottom: 1px solid #f3f3f3;
+}
+.main .item-list ul li a
+{
+	color: #acadc2;
+	font-size: 18px;
+}
+.main .item-list ul li a i
+{
+	display: inline-block;
+	width: 30px;
+}
+.main .item-list ul li span
+{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 200px;
+}
+.main .item-list ul li .fa
+{
+	color:#acadc2;
+}
+/*关注按钮区域样式*/
+.main .focus
+{
+	height: 50px;
+	width:100%;
+	margin-top: 10px;
+	margin-left: 25%;
+	/*position: absolute;
+	top:516px;	*/
+}

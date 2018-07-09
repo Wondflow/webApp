@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	width: 100%;
+	height: auto;
+	background-color: #FFFFFF;
+	
+}
+ul,li,dl,dt,dd
+{
+	list-style: none;
+}
+a
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+html{
+	font-size: 16px;
+}
+/*头部样式设置*/
+.header
+{
+	width: 100%;
+	height: 50px;
+	background-color: #8e5cd5;
+}
+.header .back
+{
+	display: inline-block;
+	width: 15%;
+	line-height: 50px;
+	font-size: 25px;
+	text-align:center;
+	margin-left: 10px;
+}
+.header h3
+{
+	font-weight: normal;
+	display: inline-block;
+	width: 50%;
+	text-align:center;
+	color: #FFFFFF;
+	font-size: 25px;
+}

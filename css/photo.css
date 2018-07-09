@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	width: 100%;
+	height: auto;
+	background-color: #FFFFFF;
+	
+}
+ul,li,dl,dt,dd
+{
+	list-style: none;
+}
+a
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+html{
+	font-size: 16px;
+}
+/*头部样式设置*/
+.header
+{
+	width: 100%;
+	height: 50px;
+	background-color: #8e5cd5;
+	position: fixed;
+	z-index: 2;
+}
+.header .back
+{
+	display: inline-block;
+	width: 15%;
+	line-height: 50px;
+	font-size: 25px;
+	text-align:center;
+	margin-left: 10px;
+}
+.header h3
+{
+	font-weight: normal;
+	display: inline-block;
+	width: 50%;
+	text-align:center;
+	color: #FFFFFF;
+	font-size: 25px;
+}
+.photo-box
+{
+	position: absolute;
+	top: 50px;
+	z-index: 1;
+	width: 100%;
+	height: auto;
+	overflow: scroll;
+	margin-top: 5px;
+}
+.photo-box img
+{
+	width: 80%;
+	height: 80%;
+}
+.photo-box .pic-item
+{
+	height: 100%;
+	text-align: center;
+}
+.photo-box .pic-item li
+{
+	height: 100%;
+	width: 30%;
+	float: left;
+	margin-right:10px;
+	
+}
+.photo-box .pic-item li:hover img
+{
+	
+}
+
